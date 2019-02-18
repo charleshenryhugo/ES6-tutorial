@@ -1,0 +1,20 @@
+{
+  "name": "zhu-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charleshenryhugo/ES6-tutorial"
+  },
+  "keywords": [
+    "palindrome",
+    "learn-enough",
+    "javascript"
+  ],
+  "author": "ZHU YUE",
+  "license": "ISC"
+}
