@@ -1,16 +1,20 @@
-modules.exports = Phrase;
+module.exports = Phrase;
 
 // extend String.prototype.reverse()
 String.prototype.reverse = function() { 
-    Array.from(this).reverse().join(''); 
+    return Array.from(this).reverse().join(''); 
 };
 
 // define Phrase Object
 function Phrase(content) {
-    this.content = content;
+    this.content = content || '';
     
+    this.letters = function() {
+        return (this.content.match(/[a-z]/gi) || []).join('');
+    }
+
     this.processedContent = function() {
-        return this.content.toLowerCase();
+        return this.letters().toLowerCase();
     }
 
     // returns true if content is palindrome, false otherwise
