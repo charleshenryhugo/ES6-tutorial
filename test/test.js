@@ -25,9 +25,14 @@ describe('Phrase', function(){
     });
 
     describe('#letters', function() {
-        describe('should return only letters', function() {
+        it('should return only letters', function() {
             let punctuatedPalindrome = new Phrase('A man, a plan, a canal—Panama!');
             assert.strictEqual(punctuatedPalindrome.letters(), 'AmanaplanacanalPanama');
+        });
+
+        it('should return the empty string on no match', function() {
+            let noLetters = new Phrase("1234.56");
+            assert.strictEqual(noLetters.letters(), "");
         });
     });
 });
