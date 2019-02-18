@@ -1,1 +1,1 @@
-# ES6-tutorial
+# zhu-palindrome
